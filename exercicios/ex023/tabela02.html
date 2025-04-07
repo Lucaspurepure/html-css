@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas semanticas</title>
+
+    <style>
+       body {
+        font-family: Arial, Helvetica, sans-serif;
+       }
+
+       caption {
+         padding: 10px;
+         background-color: rgba(0, 0, 0, 0.507);
+         color: white;
+         font-weight: bolder;
+         margin: 1px;
+       }
+
+       td, th {
+        border: 1px solid black;
+        width: 400px;
+        height: 40px;
+       }
+        table {
+            border-collapse: collapse;
+            position: relative;
+        }
+        table > thead > tr > th  {
+            background-color: darkgray;
+            color: white;
+            vertical-align: bottom;
+        }
+         table > thead > tr > th {
+         position: sticky;
+         top: -1px;
+         background-color: darkgray ;
+         border: 1px solid black;
+         }
+
+         tbody > tr:nth-child(even) {
+            background-color: aquamarine;
+         }
+
+        tfoot {
+            background-color: gray;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Minha primeira tabela</h1>
+    <table>
+        <caption>Numero de habitantes em cada provincia</caption>
+        <thead>
+           <tr>
+            <th scope="col"> Provincias </th>
+            <th scope="col">Numero de habitantes</th>
+           </tr>
+        </thead>
+
+        <tfoot>
+            <tr>
+                <th>Total de habitantes</th>
+                <th>472800000</th>
+            </tr>
+        </tfoot>
+
+        <tbody>
+             <tr>
+                <td>Maputo</td>
+                <td>1249000</td>
+             </tr>
+             <tr>
+                <td>Inhambane</td>
+                <td>93120000</td>
+             </tr>
+             <tr>
+                <td>Gaza</td>
+                <td>10882156</td>
+             </tr>
+             <tr>
+                <td>Manica</td>
+                <td>15630067</td>
+             </tr>
+             <tr>
+                <td>Sofala</td>
+                <td>13420097</td>
+             </tr>
+             <tr>
+                <td>Tete</td>
+                <td>11002345</td>
+             </tr>
+             <tr>
+                <td>Nampula</td>
+                <td>346892458</td>
+             </tr>
+             <tr>
+                <td>Zambezia</td>
+                <td>50744300</td>
+             </tr>
+             <tr>
+                <td>Niassa</td>
+                <td>12438749</td>
+             </tr>
+             <tr>
+                <td>Cabo Delgado</td>
+                <td>2135360</td>
+             </tr>
+             <tr>
+               <td>Maputo</td>
+               <td>1249000</td>
+            </tr>
+            <tr>
+               <td>Inhambane</td>
+               <td>93120000</td>
+            </tr>
+            <tr>
+               <td>Gaza</td>
+               <td>10882156</td>
+            </tr>
+            <tr>
+               <td>Manica</td>
+               <td>15630067</td>
+            </tr>
+            <tr>
+               <td>Sofala</td>
+               <td>13420097</td>
+            </tr>
+            <tr>
+               <td>Tete</td>
+               <td>11002345</td>
+            </tr>
+            <tr>
+               <td>Nampula</td>
+               <td>346892458</td>
+            </tr>
+            <tr>
+               <td>Zambezia</td>
+               <td>50744300</td>
+            </tr>
+            <tr>
+               <td>Niassa</td>
+               <td>12438749</td>
+            </tr>
+            <tr>
+               <td>Cabo Delgado</td>
+               <td>2135360</td>
+            </tr>
+        </tbody>
+    </table>
+
+   
+</body>
+</html>

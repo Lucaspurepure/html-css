@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Mesclagem de tabelas</title>
+
+   <style>
+      td {
+         border: 1px solid black;
+         width: 50px;
+         text-align: center;
+      }
+      table {
+         border-collapse: collapse;
+         height: 100px;
+      }
+   </style>
+
+
+</head>
+<body>
+   <h1> Mesclagem de celulas</h1>
+   <!-- Na mesclagem de celulas existe mesclagem de linha que e' 'rawspan' e mesclagemde colunas, que e 'colspan'.... NB: rawspan e' na vertical e colspan e, na horizontal-->
+
+   <table>
+      <tr>
+         <td>A</td>
+         <td colspan="2">B</td>
+         
+      </tr>
+      <tr>
+         <td rowspan="2">D</td>
+         <td>E</td>
+         <td rowspan="3">F</td>
+      </tr>
+      <tr>
+         
+         <td>H</td>
+         
+      </tr>
+      <tr>
+         <td>J</td>
+         <td>K</td>
+         
+      </tr>
+   </table>
+</body>
+</html>
