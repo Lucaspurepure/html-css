@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Gerador de Currículo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Preencha seu Currículo</h1>
+  <form id="cv-form">
+    <input type="text" id="name" placeholder="Seu nome" required><br>
+    <input type="text" id="title" placeholder="Cargo desejado"><br>
+    <textarea id="summary" placeholder="Resumo profissional"></textarea><br>
+    <button type="submit">Gerar Currículo</button>
+  </form>
+
+  <div id="cv-template" style="display:none;">
+    <h2 id="cv-name"></h2>
+    <h4 id="cv-title"></h4>
+    <p id="cv-summary"></p>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

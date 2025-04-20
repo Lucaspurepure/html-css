@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Exemplo de formularios</h1>
+    <form action="cadastro.php" method="post">
+        <p>
+            <label for="inum">Escolha um numero:</label>
+            <input type="range" name="num" id="inum" min="2" max="20" value="5" oninput="ires.innerHTML = Number(inum.value)">
+        </p>
+        <p>
+            <label for="ires">Resultado:</label>
+            <output name="res" id="ires">0</output>
+        </p>
+    </form>
+</body>
+</html>

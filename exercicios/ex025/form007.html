@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Exemplo de formulario</h1>
+    <form action="cadastro.php">
+        <p>
+            <label for="iprov">Provincia:</label>
+            <select name="prov" id="iprov">
+                <optgroup label="Zona Sul">
+                    <option value="MPT">Maputo</option>
+                    <option value="INH">Inhambane</option>
+                    <option value="GZ">Gaza</option>
+                </optgroup>
+                <optgroup label="Zona centro">
+                    <option value="MNC">Manica</option>
+                    <option value="SFL">Sofala</option>
+                    <option value="TT">Tete</option>
+                    <option value="ZBZ">Zambezia</option>
+                </optgroup>
+                <optgroup label="Zona norte">
+                    <option value="NMP">Nampula</option>
+                    <option value="CD">Cabo delgado</option>
+                    <option value="NSS">Niassa</option>
+                </optgroup>
+            </select>
+        </p>
+        <p>
+            <label for="iprof">Profissao:</label>
+            <input type="text" name="prof" id="iprof" list="listprof">
+            <datalist id="listprof">
+                <option>Professor</option>
+                <option>Enfermeiro</option>
+                <option>Mecanico</option>
+                <option>Jardineiro</option>
+                <option>Contabilista</option>
+                <option>Jurista</option>
+            </datalist>
+        </p>
+        <p>
+            <label for="imsg">Mensagem</label> <br>
+            <textarea name="msg" id="imsg" cols="30" rows="10"></textarea>
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
